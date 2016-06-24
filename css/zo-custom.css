@@ -25,7 +25,7 @@ footer {
 	text-align: center;
 	color: white;
 	background-image: url('../images/hero_image.jpg');
-	background-position: center;
+	background-attachment: fixed;
 }
 
 .jumbotron p {
@@ -51,7 +51,7 @@ footer {
 }
 
 .homepage h2 {
-	font-size: 30px
+	font-size: 30px;
 }
 
 .homepage a{
@@ -65,7 +65,7 @@ footer {
 }
 
 .homepage h3 {
-	font-size: 26px
+	font-size: 26px;
 }
 
 .homepage p{
@@ -77,4 +77,52 @@ footer {
 	border-top: 1px solid #e74c3c;
 	width: 160px;
 	margin-top: 15px;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 1199px) { 
+
+	.jumbotron h1 {
+		font-size: 48px;
+	}
+
+}
+
+@media (max-width: 991px) { 
+
+	.jumbotron h1 {
+		font-size: 36px;
+	}
+
+	#get-involved .col-md-4 {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+}
+
+@media (max-width: 767px) { 
+
+	.jumbotron h1 {
+		font-size: 24px;
+	}
+
+	.jumbotron p {
+		font-size: 18px;
+		padding: 10px;
+	}
+
+	.btn-large {
+	font-size: 20px
+	}
+
+	.homepage p {
+		font-size: 18px;
+	}
+
+	footer img {
+		width: 80%;
+	}
+
 }
